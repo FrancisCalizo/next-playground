@@ -15,6 +15,10 @@ const StaticData = ({ users }) => {
           Data is shown on page and is server rendered using `getStaticProps`.
           Check the network tab to confirm that it is server rendered.
         </p>
+        <p>
+          The styling on this pages uses CSS Modules, which are NOT server
+          rendered.
+        </p>
         <ul className={styles.nameList}>
           {users.map((user) => (
             <li className={styles.name} key={user.id}>

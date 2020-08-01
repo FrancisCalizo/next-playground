@@ -14,6 +14,9 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        <h2 className="home-sub-heading">
+          Styled by global styles in global.css
+        </h2>
         <div className={styles.pageLinks}>
           <div className={styles.pageLink}>
             <Link href="/example">
@@ -32,6 +35,14 @@ export default function Home() {
             <Link href="/staticData">
               <a>
                 Click here to go to a page with static data (getStaticProps)
+              </a>
+            </Link>
+          </div>
+          <div className={styles.pageLink}>
+            <Link href="/ssrPage">
+              <a>
+                Click here to go to a page with data feched at request time
+                (getServerSideProps)
               </a>
             </Link>
           </div>
